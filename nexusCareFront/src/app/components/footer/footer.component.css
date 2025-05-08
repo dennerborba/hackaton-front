@@ -1,0 +1,20 @@
+.footer{
+  height: 30vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 1vh 1vw 1vh 1vw;
+  color: #02244f;
+}
+.about-us{
+  width: 50vw;
+}
+.contact{
+  width: 50vw;
+  text-align: left;
+}
+span{
+  height: 100%;
+  background-color: #02244f;
+  width: 1px;
+  margin: 1vw;
+}
