@@ -12,10 +12,11 @@ nav {
     padding: 1em;
     flex-grow: 1;
     gap: 1.5em;
+    font-size: clamp(12px, 3vw, 22px);
 }
 
 img {
-    width: 200px;
+    width: 14.6vw;
     padding: 0;
 }
 
@@ -26,6 +27,5 @@ img {
 a {
   text-decoration: none;
   color: #02244f;
-  font-size: 22px;
   font-weight: bold;
 }
