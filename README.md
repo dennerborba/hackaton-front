@@ -1,10 +1,5 @@
 # 🧠 IA-Med: Gerador Inteligente de Relatórios Médicos
 
-![Interface do sistema](https://via.placeholder.com/1000x400.png?text=Preview+da+Interface)  
-> *Protótipo de interface com foco em usabilidade e precisão clínica.*
-
----
-
 ## 📋 Sobre o projeto
 
 **IA-Med** é uma aplicação inovadora voltada para o setor médico, que permite ao profissional de saúde gerar relatórios clínicos completos e detalhados com base em informações simples como sintomas, dores ou queixas do paciente.
@@ -32,14 +27,3 @@ Com o apoio de Inteligência Artificial, a plataforma transforma essas descriç�
 [![AWS](https://img.shields.io/badge/AWS-Cloud-yellow?logo=amazon-aws&logoColor=white)](https://aws.amazon.com)
 [![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-CI%2FCD-blue?logo=githubactions&logoColor=white)](https://github.com/features/actions)
 
----
-
-## 📸 Interface da aplicação
-
-### 🧑‍⚕️ Entrada dos dados:
-![Formulário de entrada](https://via.placeholder.com/800x300.png?text=Formul%C3%A1rio+M%C3%A9dico)
-
-### 🧾 Resultado gerado pela IA:
-![Relatório da IA](https://via.placeholder.com/800x300.png?text=Relat%C3%B3rio+Gerado+pela+IA)
-
-> A interface é intuitiva, com foco em profissionais de saúde. Basta preencher o nome do médico, paciente e sintomas iniciais. O sistema cuida do resto.
