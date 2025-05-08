@@ -1,0 +1,19 @@
+.about-container {
+  background-color: #02244f;
+  height: 90vh;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5vh;
+}
+  
+  .about-container h1,
+  .about-container h2 {
+    color: white;
+  }
+  
+  .about-container p,
+  .about-container li {
+    font-size: 16px;
+    color: white;
+  }
+  
