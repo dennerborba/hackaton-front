@@ -8,7 +8,8 @@ nav {
 .menu {
     display: flex;
     justify-content: flex-end;
-    padding: 2em;
+    align-items: center;
+    padding: 1em;
     flex-grow: 1;
     gap: 1.5em;
 }
@@ -20,4 +21,10 @@ img {
 
 .menu img {
     width: 100px;
+}
+
+a {
+  text-decoration: none;
+  color: #02244f;
+  font-size: 22px;
 }
