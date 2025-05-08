@@ -10,7 +10,6 @@ import { NavbarComponent } from './components/navbar/navbar.component';
   imports: [
     CommonModule,
     RouterOutlet,
-    HomeComponent,
     NavbarComponent
   ],
   templateUrl: './app.component.html',

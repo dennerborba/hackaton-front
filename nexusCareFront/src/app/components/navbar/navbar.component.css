@@ -2,6 +2,7 @@ nav {
     color: #02244f;
     display: flex;
     align-items: center;
+    height: 6em;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
