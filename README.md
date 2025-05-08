@@ -12,18 +12,21 @@ Com o apoio de Inteligência Artificial, a plataforma transforma essas descriç�
 
 ### 👨‍⚕️ Backend
 
-[![Java](https://img.shields.io/badge/Java-17-red?logo=java&logoColor=white)](https://www.java.com)
-[![Spring Boot](https://img.shields.io/badge/Spring%20Boot-2.7-green?logo=springboot)](https://spring.io/projects/spring-boot)
+[![Java](https://img.shields.io/badge/Java-17-red?logo=java&logoColor=white)](https://www.java.com)  
+[![Spring Boot](https://img.shields.io/badge/Spring%20Boot-2.7-green?logo=springboot)](https://spring.io/projects/spring-boot)  
 [![Maven](https://img.shields.io/badge/Maven-Build%20Tool-orange?logo=apachemaven)](https://maven.apache.org)
 
 ### 🎨 Frontend
 
-[![Angular](https://img.shields.io/badge/Angular-15-red?logo=angular&logoColor=white)](https://angular.io)
-[![TypeScript](https://img.shields.io/badge/TypeScript-4.x-blue?logo=typescript)](https://www.typescriptlang.org)
+[![Angular](https://img.shields.io/badge/Angular-15-red?logo=angular&logoColor=white)](https://angular.io)  
+[![TypeScript](https://img.shields.io/badge/TypeScript-4.x-blue?logo=typescript)](https://www.typescriptlang.org)  
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
 
 ### ☁️ Infraestrutura
 
-[![AWS](https://img.shields.io/badge/AWS-Cloud-yellow?logo=amazon-aws&logoColor=white)](https://aws.amazon.com)
+[![AWS](https://img.shields.io/badge/AWS-Cloud-yellow?logo=amazon-aws&logoColor=white)](https://aws.amazon.com)  
 [![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-CI%2FCD-blue?logo=githubactions&logoColor=white)](https://github.com/features/actions)
 
+---
+
+> 🧑‍💻 Projeto desenvolvido durante o **Hackweek** no curso **+Devs2Blu**, com foco em soluções reais para o setor da saúde utilizando Inteligência Artificial.
