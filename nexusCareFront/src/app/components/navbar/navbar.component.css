@@ -2,7 +2,7 @@ nav {
     color: #02244f;
     display: flex;
     align-items: center;
-    height: 6em;
+    height: 10vh;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -31,4 +31,9 @@ a {
   text-decoration: none;
   color: #02244f;
   font-weight: bold;
+}
+.imagem a img{
+  width: 14.6vh;
+  padding: 0;
+  max-width: 13vh;
 }
