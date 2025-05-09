@@ -18,3 +18,21 @@ span{
   width: 1px;
   margin: 1vw;
 }
+.contact p{
+  display: flex;
+  align-items: center;
+  font-size: clamp(10px, 3vw, 18px);
+}
+.contact p a{
+  text-decoration: none;
+  color: #02244f;
+}
+.contact p mat-icon{
+  margin-right: 0.5vw;
+}
+p{
+  font-size: clamp(10px, 3vw, 18px);
+}
+h2{
+  font-size: clamp(16px, 5vw, 32px);
+}
