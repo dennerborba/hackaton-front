@@ -40,4 +40,8 @@ export class ConnectApiService {
       'observacoes' : observacoes
     })
   }
+
+  enviarRelatorioIA(texto: string) {
+    return this.httpClient.post<any>('http://localhost:8080/relatorio', { texto });
+  }
 }
