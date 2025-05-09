@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
+import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [],
+  imports: [
+    MatIconModule
+  ],
   templateUrl: './footer.component.html',
-  styleUrl: './footer.component.css'
+  styleUrls: ['./footer.component.css'], // <-- Corrigido (plural)
 })
-export class FooterComponent {
-
-}
+export class FooterComponent {}
