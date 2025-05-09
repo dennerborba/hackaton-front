@@ -3,22 +3,19 @@
       <div class="pessoas">
         <div class="menu">
           <button class="toggle-btn" (click)="toggleDropdown('medicos')">☰ Médicos</button>
-          <ul id="medicos" class="dropdown hidden">
-            <li (click)="selecionar('Dr. João')">Dr. João</li>
-            <li (click)="selecionar('Dra. Ana')">Dra. Ana</li>
-            <li (click)="selecionar('Dr. Carlos')">Dr. Carlos</li>
+          <ul id="medicos" class="dropdown hidden" >
+            <li *ngFor="let doctor of doctors">{{doctor.nome}}</li>
           </ul>
         </div>
       </div>
     </div>
-  
+
     <div class="container-relatorio">
       <div class="input-wrapper">
         <label for="textArea" class="floating-label">Descreva o relatório</label>
         <input type="text" name="relatorio-saida" id="textArea" class="input-text" />
       </div>
-  
+
       <div class="relatorio-entrada"></div>
     </div>
   </main>
-  
