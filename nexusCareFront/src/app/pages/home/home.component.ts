@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
-import { NavbarComponent } from '../../components/navbar/navbar.component';
+import { SobreComponent } from '../sobre/sobre.component';
+
 @Component({
   selector: 'app-home',
   standalone: true,
   imports: [
-    NavbarComponent
+    SobreComponent
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'

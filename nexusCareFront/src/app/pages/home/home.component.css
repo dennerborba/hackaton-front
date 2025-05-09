@@ -61,3 +61,10 @@ p {
     text-align: justify;
   }
 }
+
+.home {
+  background-color: #02244f;
+  display: flex;
+  flex-direction: column;
+  gap: 8em;
+}
