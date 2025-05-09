@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { SobreComponent } from '../sobre/sobre.component';
 import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
@@ -7,15 +7,16 @@ import { CommonModule } from '@angular/common';
   selector: 'app-home',
   standalone: true,
   imports: [
-    SobreComponent, CommonModule
+    SobreComponent,
+    CommonModule
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
-export class HomeComponent {
-
+export class HomeComponent{
   constructor(private router: Router) {
   }
+
 
   navegarParaIA() {
     this.router.navigate(['/relatorio']).then(() => {
