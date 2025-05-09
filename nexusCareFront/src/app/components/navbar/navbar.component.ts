@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
-
+import { NavigationEnd, Router, RouterModule } from '@angular/router';
+import {filter} from 'rxjs/operators'
 @Component({
   selector: 'app-navbar',
   standalone: true,
@@ -10,6 +10,17 @@ import { RouterModule } from '@angular/router';
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
+  
+  mostrarMenu = false
+
+  constructor(private router: Router) {
+    this.router.events.pipe(filter(event => event instanceof NavigationEnd))
+    .subscribe((event: any) => {
+      this.mostrarMenu = event.urlAfterRedirects === '/'
+    })
+    
+  }
+
   scrollTo(entrada: string) {
     const element = document.getElementById(entrada)
     if (element) {

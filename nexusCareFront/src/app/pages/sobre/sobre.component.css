@@ -1,6 +1,6 @@
 .about-container {
   background-color: #02244f;
-  height: 70vh;
+  height: 50vh;
   align-items: center;
   justify-content: space-between;
   font-family: var(--fonte-principal);
@@ -15,7 +15,6 @@
   .about-container h2 {
     text-align: center;
     font-size: clamp(20px, 6vw, 40px);
-
   }
 
   .about-container p,
