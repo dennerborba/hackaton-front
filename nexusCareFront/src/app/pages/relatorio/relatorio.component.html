@@ -8,6 +8,7 @@
           </ul>
           <button class="toggle-btn" (click)="toggleDropdown('pacientes')">☰ {{inputPacientes}}</button>
           <ul id="pacientes" class="dropdown hidden">
+
             <li *ngFor="let paciente of pacientes">{{paciente.nome_completo}}</li>
           </ul>
         </div>
