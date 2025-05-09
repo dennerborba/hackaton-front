@@ -5,6 +5,8 @@
   align-items: center;
   justify-content: space-between;
   padding: 0px 5% 0px 5%;
+  border-bottom: 1px solid white;
+  text-align: justify;
 }
 
 .imagem img {
@@ -68,3 +70,11 @@ p {
   flex-direction: column;
   gap: 8em;
 }
+.sobre {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+}
+
