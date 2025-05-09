@@ -10,5 +10,10 @@ import { RouterModule } from '@angular/router';
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
-
+  scrollTo(entrada: string) {
+    const element = document.getElementById(entrada)
+    if (element) {
+      element.scrollIntoView({behavior: 'smooth'})
+    }
+  }
 }

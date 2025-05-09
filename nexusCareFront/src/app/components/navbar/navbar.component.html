@@ -1,14 +1,17 @@
 <nav>
+  <div class="menu">
     <span>
       <a routerLink="/">
         <img src="assets/nexus_care-logo.png" alt="Logo">
       </a>
     </span>
-    <div class="menu">
-        <span class="imagem">
-          <a routerLink="/relatorio">
-            <img src="assets/nexusAI.png" alt="Logo NexusAI">
-          </a>
-        </span>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon">☰</div>
+      <div class="menu-dropdown">
+        <a (click)="scrollTo('sobre')">Sobre a Empresa</a>
+        <a href="#contato">Contato</a>
+        <a routerLink="/relatorio">NexusAI</a>
+      </div>
     </div>
+  </div>
 </nav>
