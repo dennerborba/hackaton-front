@@ -20,16 +20,16 @@ export class ConnectApiService {
 
   getMedicos(): Observable<Doctor[]> {
     return this.httpClient.get<Doctor[]>(this.medicoUrl);
-  }
+  };
   getCids(): Observable<Cid[]> {
     return this.httpClient.get<Cid[]>(this.cidUrl);
-  }
+  };
   getPacientes(): Observable<Paciente[]>{
     return this.httpClient.get<Paciente[]>(this.pacienteUrl);
-  }
+  };
   getMedicamentos(): Observable<NomeMedicamento[]>{
     return this.httpClient.get<NomeMedicamento[]>(this.nomeMedicamentoUrl);
-  }
+  };
 
   postReceita(pacienteId: number, medicoId: number, cidId: number, dataEmissao: string, observacoes: string):  Observable<Receita>{
     return this.httpClient.post<Receita>(this.receitaUrl, {
