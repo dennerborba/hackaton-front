@@ -10,6 +10,10 @@
           <ul id="pacientes" class="dropdown hidden">
             <li *ngFor="let paciente of pacientes" (click)="selecionarPaciente(paciente.nome_completo)">{{paciente.nome_completo}}</li>
           </ul>
+          <button class="toggle-btn" (click)="toggleDropdown('cid')">☰ {{inputCid}}</button>
+          <ul id="cid" class="dropdown hidden">
+            <li *ngFor="let cid of cids" (click)="selecionarCid(cid.descricao)">{{cid.descricao}}</li>
+          </ul>
         </div>
       </div>
     </div>
