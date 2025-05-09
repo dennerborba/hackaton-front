@@ -68,8 +68,9 @@ p {
   background-color: #02244f;
   display: flex;
   flex-direction: column;
+  gap: 8em;
 }
-.sobre{
+.sobre {
   height: 100vh;
   display: flex;
   justify-content: center;

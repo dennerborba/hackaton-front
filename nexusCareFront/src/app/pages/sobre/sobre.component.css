@@ -3,6 +3,7 @@
   height: 70vh;
   align-items: center;
   justify-content: space-between;
+  font-family: var(--fonte-principal);
   padding: 5vh;
 }
 
@@ -14,11 +15,11 @@
   .about-container h2 {
     text-align: center;
     font-size: clamp(20px, 6vw, 40px);
+
   }
 
   .about-container p,
   .about-container li {
     font-size: clamp(10px, 3vw, 20px);
     color: white;
-
   }
