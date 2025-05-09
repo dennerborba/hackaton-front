@@ -21,6 +21,7 @@ export class ConnectApiService {
   getMedicos(): Observable<Doctor[]> {
     return this.httpClient.get<Doctor[]>(this.medicoUrl);
   };
+
   getCids(): Observable<Cid[]> {
     return this.httpClient.get<Cid[]>(this.cidUrl);
   };
