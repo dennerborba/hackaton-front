@@ -6,6 +6,7 @@ import { Cid } from '../models/cid.model';
 import { Paciente } from '../models/paciente.model';
 import { NomeMedicamento } from '../models/nomeMedicamentos.model';
 import { Receita } from '../models/receita.model';
+import { ItemReceita } from '../models/itemReceita.model';
 
 @Injectable({
   providedIn: 'root',
@@ -17,27 +18,64 @@ export class ConnectApiService {
   private nomeMedicamentoUrl = 'http://localhost:8080/nome_medicamentos';
   private cidUrl = 'http://localhost:8080/cid';
   private receitaUrl = 'http://localhost:8080/receita';
+  private itemReceitaUrl = 'http://localhost:8080/receita_medicamentos';
 
   getMedicos(): Observable<Doctor[]> {
     return this.httpClient.get<Doctor[]>(this.medicoUrl);
-  };
+  }
+  getMedicoById(idMedico: number): Observable<Doctor> {
+    return this.httpClient.get<Doctor>(this.medicoUrl + '/' + idMedico);
+  }
+
   getCids(): Observable<Cid[]> {
     return this.httpClient.get<Cid[]>(this.cidUrl);
-  };
-  getPacientes(): Observable<Paciente[]>{
-    return this.httpClient.get<Paciente[]>(this.pacienteUrl);
-  };
-  getMedicamentos(): Observable<NomeMedicamento[]>{
-    return this.httpClient.get<NomeMedicamento[]>(this.nomeMedicamentoUrl);
-  };
+  }
+  getCidById(idCid: number): Observable<Cid> {
+    return this.httpClient.get<Cid>(this.cidUrl + '/' + idCid);
+  }
 
-  postReceita(pacienteId: number, medicoId: number, cidId: number, dataEmissao: string, observacoes: string):  Observable<Receita>{
+  getPacientes(): Observable<Paciente[]> {
+    return this.httpClient.get<Paciente[]>(this.pacienteUrl);
+  }
+  getPacienteById(idPaciente: number): Observable<Paciente> {
+    return this.httpClient.get<Paciente>(this.pacienteUrl + '/' + idPaciente);
+  }
+
+  getMedicamentos(): Observable<NomeMedicamento[]> {
+    return this.httpClient.get<NomeMedicamento[]>(this.nomeMedicamentoUrl);
+  }
+
+  postReceita(
+    pacienteId: number,
+    medicoId: number,
+    cidId: number,
+    dataEmissao: string,
+    observacoes: string
+  ): Observable<Receita> {
     return this.httpClient.post<Receita>(this.receitaUrl, {
-      'paciente_id' : pacienteId,
-      'medico_id' : medicoId,
-      'cid_id' : cidId,
-      'dataEmissao' : dataEmissao,
-      'observacoes' : observacoes
-    })
+      paciente_id: pacienteId,
+      medico_id: medicoId,
+      cid_id: cidId,
+      dataEmissao: dataEmissao,
+      observacoes: observacoes,
+    });
+  }
+
+  postItemReceita(
+    idReceita: number,
+    medicamento: NomeMedicamento,
+    quantidade: number,
+    dose: string,
+    frequencia: number,
+    orientacao: string
+  ): Observable<ItemReceita> {
+    return this.httpClient.post<ItemReceita>(this.itemReceitaUrl, {
+      'receita_id' : idReceita,
+      'medicamento' : medicamento,
+      'quantidade' : quantidade,
+      'dose' : dose,
+      'frequencia' : frequencia,
+      'orientacao' : orientacao
+    });
   }
 }
