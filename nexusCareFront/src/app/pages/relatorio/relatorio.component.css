@@ -1,3 +1,7 @@
+* {
+  font-family: var(--fonte-principal);
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -25,6 +29,8 @@
   
   .menu {
     position: relative;
+    display: flex;
+    gap: 1em;
   }
   
   .toggle-btn {
@@ -87,7 +93,9 @@
   
   .input-wrapper {
     position: relative;
-    width: 600px;
+    width: 35em;
+    display: flex;
+    gap: 0.5em;
   }
   
   .floating-label {
