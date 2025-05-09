@@ -23,7 +23,6 @@ nav {
 .hamburger-icon {
   font-size: 24px;
   padding: 10px;
-  border: 2px solid #ccc;
   border-radius: 4px;
   transition: background-color 0.2s ease;
 }
@@ -60,7 +59,6 @@ nav {
   background-color: #f2f2f2;
 }
 
-/* Mostrar o menu ao passar o mouse */
 .hamburger-menu:hover .menu-dropdown {
   display: flex;
 }
@@ -70,12 +68,12 @@ img {
     padding: 0;
 }
 
-
 a {
   text-decoration: none;
   color: #02244f;
   font-weight: bold;
 }
+
 .imagem a img{
   width: 14.6vh;
   padding: 0;

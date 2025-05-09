@@ -5,12 +5,11 @@
         <img src="assets/nexus_care-logo.png" alt="Logo">
       </a>
     </span>
-    <div class="hamburger-menu">
+    <div class="hamburger-menu" *ngIf="mostrarMenu">
       <div class="hamburger-icon">☰</div>
       <div class="menu-dropdown">
+        <a (click)="scrollTo('teste-api')">NexusAI</a>
         <a (click)="scrollTo('sobre')">Sobre a Empresa</a>
-        <a href="#contato">Contato</a>
-        <a routerLink="/relatorio">NexusAI</a>
       </div>
     </div>
   </div>

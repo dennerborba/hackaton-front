@@ -68,9 +68,48 @@ p {
   background-color: #02244f;
   display: flex;
   flex-direction: column;
-  gap: 8em;
+  gap: 5em;
 }
-.sobre {
+
+#teste-api {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  justify-content: center;
+  align-items: center;
+  color: #02244f;
+  border-bottom: 1px solid white;
+  
+}
+
+.teste-api__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10em;
+  background-color: white;
+  border-radius: 12px;
+  font-family: var(--fonte-principal);
+}
+
+#teste-api button {
+  margin-top: 0.5em;
+  padding: 1.8em;
+  cursor: pointer;
+  background-color: #02244f;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-family: var(--fonte-principal);
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+#teste-api button:hover {
+  background-color: #0c3a75;
+}
+
+#sobre {
   height: 100vh;
   display: flex;
   justify-content: center;
