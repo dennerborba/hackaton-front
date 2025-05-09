@@ -2,16 +2,26 @@
   font-family: var(--fonte-principal);
 }
 
+.container-geral {
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+}
+
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    background-color: #02244f;
-    gap: 30px;
-    padding-top: 30px;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  height: 70vh;
+  gap: 30px;
+  padding-top: 30px;
+  border-radius: 20px;
+}
+
   
   .header {
     width: 90%;
@@ -89,6 +99,7 @@
     flex-direction: column;
     align-items: center;
     gap: 25px;
+    margin-bottom: 380px;
   }
   
   .input-wrapper {
@@ -142,4 +153,30 @@
   .relatorio-entrada:hover {
     box-shadow: 0 10px 25px rgba(0,0,0,0.4);
   }
+
+  .footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .imgMedico {
+    width: 500px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .imgMedico img {
+    width: 390px;
+    height: 70px;
+  }
+
+  .imgMouse {
+    width: 210px;
+    height: 70px;
+  }
+  
   
