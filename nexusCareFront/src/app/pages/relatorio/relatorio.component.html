@@ -1,13 +1,24 @@
-<form action="">
-    <section class="container">
-        <div class="pessoas">
-            <label for="medico">Nome do Médico:</label>
-            <input type="text" class="medico">
-            <label for="paciente">Nome do paciente:</label>
-            <input type="text" class="paciente">
+<main class="container">
+    <div class="header">
+      <div class="pessoas">
+        <div class="menu">
+          <button class="toggle-btn" (click)="toggleDropdown('medicos')">☰ Médicos</button>
+          <ul id="medicos" class="dropdown hidden">
+            <li (click)="selecionar('Dr. João')">Dr. João</li>
+            <li (click)="selecionar('Dra. Ana')">Dra. Ana</li>
+            <li (click)="selecionar('Dr. Carlos')">Dr. Carlos</li>
+          </ul>
         </div>
-        <div class="prompt">
-            <input type="text" id="prompt">
-        </div>
-    </section>
-</form>
+      </div>
+    </div>
+  
+    <div class="container-relatorio">
+      <div class="input-wrapper">
+        <label for="textArea" class="floating-label">Descreva o relatório</label>
+        <input type="text" name="relatorio-saida" id="textArea" class="input-text" />
+      </div>
+  
+      <div class="relatorio-entrada"></div>
+    </div>
+  </main>
+  
