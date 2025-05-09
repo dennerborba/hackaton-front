@@ -49,8 +49,11 @@ export class RelatorioComponent implements OnInit{
     }
   }
 
-  selecionar(nome: string): void {
+  selecionarDoutor(nome: string): void {
     this.inputDoctors = nome
+  }
+  selecionarPaciente(nome: string): void{
+    this.inputPacientes = nome
   }
 
 }
