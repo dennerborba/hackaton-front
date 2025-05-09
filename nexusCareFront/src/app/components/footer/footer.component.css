@@ -5,8 +5,12 @@
   padding: 1vh 1vw 1vh 1vw;
   color: #02244f;
 }
-.about-us{
+.logo{
   width: 50vw;
+}
+.logo img{
+  height: 30vh;
+  width: 30vw;
 }
 .contact{
   width: 50vw;

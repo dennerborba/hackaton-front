@@ -6,20 +6,19 @@
   font-family: var(--fonte-principal);
   padding: 5vh;
 }
-  
-  .about-container h1,
-  .about-container h2 {
+
+  .about-container h2,
+  .about-container h3 {
     color: white;
   }
-  
-  .about-container h1 {
+
+  .about-container h2 {
     text-align: center;
-    font-size: 2.5em;
+    font-size: clamp(20px, 6vw, 40px);
   }
 
   .about-container p,
   .about-container li {
-    font-size: 1.2em;
+    font-size: clamp(10px, 3vw, 20px);
     color: white;
   }
-  
