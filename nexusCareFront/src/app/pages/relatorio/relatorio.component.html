@@ -4,12 +4,11 @@
         <div class="menu">
           <button class="toggle-btn" (click)="toggleDropdown('medicos')">☰ {{inputDoctors}}</button>
           <ul id="medicos" class="dropdown hidden" >
-            <li *ngFor="let doctor of doctors" (click)="selecionar(doctor.nome)">{{doctor.nome}}</li>
+            <li *ngFor="let doctor of doctors" (click)="selecionarDoutor(doctor.nome)">{{doctor.nome}}</li>
           </ul>
           <button class="toggle-btn" (click)="toggleDropdown('pacientes')">☰ {{inputPacientes}}</button>
           <ul id="pacientes" class="dropdown hidden">
-
-            <li *ngFor="let paciente of pacientes">{{paciente.nome_completo}}</li>
+            <li *ngFor="let paciente of pacientes" (click)="selecionarPaciente(paciente.nome_completo)">{{paciente.nome_completo}}</li>
           </ul>
         </div>
       </div>
