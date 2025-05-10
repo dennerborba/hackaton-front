@@ -80,6 +80,6 @@ export class ConnectApiService {
   }
 
   enviarRelatorioIA(texto: string) {
-    return this.httpClient.post<any>('http://localhost:8080/relatorio', { texto });
+    return this.httpClient.post<any>('http://localhost:8080/consulta_ia', { texto });
   }
 }
