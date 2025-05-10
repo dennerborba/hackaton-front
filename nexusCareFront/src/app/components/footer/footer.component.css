@@ -7,7 +7,7 @@
   align-items: center;
 }
 .logo{
-  width: 60vw;
+  width: 50vw;
   height: 30vh;
   display: flex;
   align-items: center;
@@ -17,7 +17,7 @@
   width: 30vw;
 }
 .contact{
-  width: 30vw;
+  width: 50vw;
   text-align: left;
   height: 30vh;
 }
