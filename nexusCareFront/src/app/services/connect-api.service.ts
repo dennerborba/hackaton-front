@@ -78,4 +78,8 @@ export class ConnectApiService {
       'orientacao' : orientacao
     });
   }
+
+  enviarRelatorioIA(texto: string) {
+    return this.httpClient.post<any>('http://localhost:8080/relatorio', { texto });
+  }
 }
