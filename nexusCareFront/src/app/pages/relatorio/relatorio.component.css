@@ -6,7 +6,7 @@
   display: flex;
   justify-content: center;
   padding-top: 60px;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background-image: url('/assets/imgNexusAi.png/medicoFundo.png');
   background-size: cover;
