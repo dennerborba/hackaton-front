@@ -4,6 +4,7 @@ import { ConnectApiService } from '../../services/connect-api.service';
 import { CommonModule } from '@angular/common';
 import { Paciente } from '../../models/paciente.model';
 import { FormsModule } from '@angular/forms';
+import { Cid } from '../../models/cid.model';
 
 @Component({
   selector: 'app-relatorio',
@@ -19,8 +20,11 @@ export class RelatorioComponent implements OnInit{
 
   doctors: Doctor[] =[];
   inputDoctors: string = "Médicos";
-  inputPacientes: string = "Pacientes"
+  inputPacientes: string = "Pacientes";
+  inputCid: string = "Cid";
   pacientes: Paciente[] = [];
+  cids: Cid[] = [];
+
 
   textoRelatorio: string = '';
   respostaRelatorio: string = '';
@@ -45,6 +49,14 @@ export class RelatorioComponent implements OnInit{
         console.log('Deu pau meu amigo ' + err);
       },
     });
+    this.service.getCids().subscribe({
+      next: (value) => {
+        this.cids = value
+      },
+      error: (err) => {
+        console.log("Deu pau meu amigo " + err)
+      }
+    })
 
   }
 
@@ -60,6 +72,9 @@ export class RelatorioComponent implements OnInit{
   }
   selecionarPaciente(nome: string): void{
     this.inputPacientes = nome
+  }
+  selecionarCid(nome: string): void{
+    this.inputCid = nome
   }
 
   enviarRelatorio(): void {
