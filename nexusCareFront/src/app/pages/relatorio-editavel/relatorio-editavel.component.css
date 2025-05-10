@@ -1,0 +1,12 @@
+.conteiner-principal{
+    height: 100vh;
+    background-color: #02244f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.conetiner-editaveis{
+    width: 60vw;
+    height: 90vh;
+    background-color: rgb(236, 240, 243);
+}

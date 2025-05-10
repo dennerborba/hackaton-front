@@ -6,14 +6,15 @@
   display: flex;
   justify-content: center;
   padding-top: 60px;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background-image: url('/assets/imgNexusAi.png/medicoFundo.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
 }
+
+
 
 .container {
   display: flex;
@@ -111,7 +112,7 @@
     flex-direction: column;
     align-items: center;
     gap: 25px;
-    margin-bottom: 380px;
+    margin-bottom: 39vh;
   }
   
   .input-wrapper {
@@ -187,7 +188,7 @@
   }
 
   .imgMouse {
-    width: 13vw;
+    width: 14vw;
     height: 7vh;
   }
   

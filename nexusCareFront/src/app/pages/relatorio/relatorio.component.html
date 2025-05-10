@@ -11,13 +11,13 @@
         <div class="menuPaciente">
           <button class="toggle-btn" (click)="toggleDropdown('pacientes')">☰ {{inputPacientes}}</button>
           <ul id="pacientes" class="dropdown hidden">
-            <li *ngFor="let paciente of pacientes" (click)="selecionarPaciente(paciente.nome_completo)">{{paciente.nome_completo}}</li>
+            <li *ngFor="let paciente of pacientes" (click)="selecionarPaciente(paciente.nomeCompleto)">{{paciente.nomeCompleto}}</li>
           </ul>
         </div>
         <div class="menuPaciente">
           <button class="toggle-btn" (click)="toggleDropdown('cids')">☰ {{inputCid}}</button>
           <ul id="cids" class="dropdown hidden">
-            <li *ngFor="let cid of cids" (click)="selecionarPaciente(cid.descricao)">{{cid.descricao}}</li>
+            <li *ngFor="let cid of cids" (click)="selecionarCid(cid.descricao)">{{cid.descricao}}</li>
           </ul>
         </div>
       </div>
@@ -27,7 +27,7 @@
       <div class="input-wrapper">
         <label for="textArea" class="floating-label">Descreva o relatório</label>
         <input type="text" name="relatorioEntrada" id="textArea" class="input-text" [(ngModel)]="textoRelatorio" required/>
-        <button type="submit" class="toggle-btn">Gerar relatório</button>
+        <a routerLink="/edit-relatory"><button type="submit" class="toggle-btn">Gerar relatório</button></a>
       </div>
     </form>
 

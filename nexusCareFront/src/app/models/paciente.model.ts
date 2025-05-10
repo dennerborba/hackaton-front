@@ -1,9 +1,9 @@
 export interface Paciente {
   id: number;
-  nome_completo: string;
-  endereco_completo: string;
-  codigo_pronto: string;
-  codigo_cns: string;
+  nomeCompleto: string;
+  enderecoCompleto: string;
+  codigoCronto: string;
+  codigoCns: string;
   sexo: string;
-  data_nascimento: string;
+  dataNascimento: string;
 }

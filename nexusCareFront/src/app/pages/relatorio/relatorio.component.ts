@@ -5,13 +5,15 @@ import { CommonModule } from '@angular/common';
 import { Paciente } from '../../models/paciente.model';
 import { FormsModule } from '@angular/forms';
 import { Cid } from '../../models/cid.model';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-relatorio',
   standalone: true,
   imports: [
     CommonModule,
-    FormsModule
+    FormsModule,
+    RouterModule
   ],
   templateUrl: './relatorio.component.html',
   styleUrls: ['./relatorio.component.css']
@@ -96,5 +98,8 @@ export class RelatorioComponent implements OnInit{
         console.error('Erro ao enviar relatório:', err);
       }
     });
+  }
+  chamarApiERedirecionar(){
+
   }
 }
