@@ -13,15 +13,17 @@
           <ul id="pacientes" class="dropdown hidden">
             <li *ngFor="let paciente of pacientes" (click)="selecionarPaciente(paciente.nome_completo)">{{paciente.nome_completo}}</li>
           </ul>
-        </div> 
+        </div>
       </div>
     </div>
 
     <form class="container-relatorio" (ngSubmit)="enviarRelatorio()" #relatorioForm="ngForm">
       <div class="input-wrapper">
         <label for="textArea" class="floating-label">Descreva o relatório</label>
+
         <input type="text" name="relatorioEntrada" id="textArea" class="input-text" [(ngModel)]="textoRelatorio" required/>
         <button type="submit" class="toggle-btn">Gerar relatório</button>
+
       </div>
     </form>
     
