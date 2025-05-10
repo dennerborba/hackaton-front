@@ -1,23 +1,39 @@
 .about-container {
   background-color: #02244f;
-  align-items: center;
-  justify-content: space-between;
-  font-family: var(--fonte-principal);
   padding: 5vh;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-family: var(--fonte-principal);
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-  .about-container h2,
-  .about-container h3 {
-    color: white;
-  }
+.about-container h2,
+.about-container h3 {
+  color: white;
+  margin-bottom: 1rem;
+}
 
-  .about-container h2 {
-    text-align: center;
-    font-size: clamp(20px, 6vw, 40px);
-  }
+.about-container h2 {
+  text-align: center;
+  font-size: clamp(24px, 6vw, 40px);
+  border-bottom: 2px solid #ffffff33;
+  padding-bottom: 0.5rem;
+}
 
-  .about-container p,
-  .about-container li {
-    font-size: clamp(10px, 3vw, 20px);
-    color: white;
-  }
+.about-container p,
+.about-container li {
+  font-size: clamp(14px, 3vw, 20px);
+  color: white;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.about-container ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.about-container li::marker {
+  color: #ffffff99;
+}
