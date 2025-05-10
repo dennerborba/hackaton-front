@@ -65,16 +65,20 @@ export class RelatorioComponent implements OnInit{
     if (element) {
       element.classList.toggle('hidden');
     }
+    console.log(id)
   }
 
   selecionarDoutor(nome: string): void {
     this.inputDoctors = nome
+    this.toggleDropdown("medicos")
   }
   selecionarPaciente(nome: string): void{
     this.inputPacientes = nome
+    this.toggleDropdown("pacientes")
   }
   selecionarCid(nome: string): void{
     this.inputCid = nome
+    this.toggleDropdown("cid")
   }
 
   enviarRelatorio(): void {
