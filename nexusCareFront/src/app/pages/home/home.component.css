@@ -108,11 +108,3 @@ p {
   background-color: #0c3a75;
 }
 
-#sobre {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: justify;
-}
-
