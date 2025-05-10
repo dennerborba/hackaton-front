@@ -1,5 +1,5 @@
 <main class="container-geral">
-  <div class="container" style="background-image: url('assets/imgNexusAi.png/Rectangle 1.png');background-repeat: no-repeat;background-position: center;background-size: cover;">
+  <div class="container">
     <div class="header">
       <div class="pessoas">
         <div class="menuMedico">
@@ -12,6 +12,12 @@
           <button class="toggle-btn" (click)="toggleDropdown('pacientes')">☰ {{inputPacientes}}</button>
           <ul id="pacientes" class="dropdown hidden">
             <li *ngFor="let paciente of pacientes" (click)="selecionarPaciente(paciente.nome_completo)">{{paciente.nome_completo}}</li>
+          </ul>
+        </div>
+        <div class="menuPaciente">
+          <button class="toggle-btn" (click)="toggleDropdown('cids')">☰ {{inputCid}}</button>
+          <ul id="cids" class="dropdown hidden">
+            <li *ngFor="let cid of cids" (click)="selecionarPaciente(cid.descricao)">{{cid.descricao}}</li>
           </ul>
         </div>
       </div>

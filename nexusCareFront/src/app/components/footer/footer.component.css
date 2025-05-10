@@ -4,7 +4,6 @@
   justify-content: space-evenly;
   padding: 1vh 1vw 1vh 1vw;
   color: #02244f;
-  background-color: rgb(214, 217, 219);
 }
 .logo{
   width: 60vw;
@@ -16,8 +15,8 @@
 .contact{
   width: 30vw;
   text-align: left;
-  margin-left: 380px;
-  margin-top: 30px;
+  margin-left: 27vw;
+  margin-top: 3.5vh;
 }
 span{
   height: 100%;

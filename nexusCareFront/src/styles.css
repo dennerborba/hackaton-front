@@ -5,6 +5,7 @@ body {
     margin: 0;
     box-sizing: border-box;
     font-family: var(--fonte-principal);
+    background-color: rgb(149, 151, 153);
 }
 
 :root {
