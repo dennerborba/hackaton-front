@@ -1,20 +1,23 @@
 .footer{
   height: 30vh;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding: 1vh 1vw 1vh 1vw;
   color: #02244f;
+  background-color: rgb(214, 217, 219);
 }
 .logo{
-  width: 50vw;
+  width: 60vw;
 }
 .logo img{
   height: 30vh;
   width: 30vw;
 }
 .contact{
-  width: 50vw;
+  width: 30vw;
   text-align: left;
+  margin-left: 380px;
+  margin-top: 30px;
 }
 span{
   height: 100%;

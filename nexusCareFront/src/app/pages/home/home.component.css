@@ -85,7 +85,7 @@ p {
   flex-direction: column;
   align-items: center;
   padding: 10em;
-  background-color: white;
+  background-color: rgb(214, 217, 219);
   border-radius: 12px;
   font-family: var(--fonte-principal);
 }
@@ -94,7 +94,8 @@ p {
   margin-top: 0.5em;
   padding: 1.8em;
   cursor: pointer;
-  background-color: #02244f;
+  background-image: url('/assets/imgNexusAi.png/Rectangle 1.png');
+  background-size: 150% auto;
   color: white;
   border: none;
   border-radius: 8px;
