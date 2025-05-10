@@ -3,12 +3,15 @@ import { Component, OnInit } from '@angular/core';
 import { ConnectApiService } from '../../services/connect-api.service';
 import { CommonModule } from '@angular/common';
 import { Paciente } from '../../models/paciente.model';
+import { FormsModule } from '@angular/forms';
 import { Cid } from '../../models/cid.model';
+
 @Component({
   selector: 'app-relatorio',
   standalone: true,
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule
   ],
   templateUrl: './relatorio.component.html',
   styleUrls: ['./relatorio.component.css']
@@ -22,6 +25,9 @@ export class RelatorioComponent implements OnInit{
   pacientes: Paciente[] = [];
   cids: Cid[] = [];
 
+
+  textoRelatorio: string = '';
+  respostaRelatorio: string = '';
 
   constructor(private service: ConnectApiService){}
   ngOnInit(): void {
@@ -71,4 +77,20 @@ export class RelatorioComponent implements OnInit{
     this.inputCid = nome
   }
 
+  enviarRelatorio(): void {
+    if (!this.textoRelatorio.trim()) {
+      console.log('O campo de relatório está vazio.');
+      return;
+    }
+
+    this.service.enviarRelatorioIA(this.textoRelatorio).subscribe({
+      next: (resposta) => {
+        console.log('Resposta da IA:', resposta);
+        this.respostaRelatorio = resposta.resultado || JSON.stringify(resposta);
+      },
+      error: (err) => {
+        console.error('Erro ao enviar relatório:', err);
+      }
+    });
+  }
 }
